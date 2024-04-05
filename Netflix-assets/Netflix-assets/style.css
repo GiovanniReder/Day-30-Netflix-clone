@@ -1,0 +1,52 @@
+.fs-badge {
+  font-size: 0.7rem;
+  padding: 2px;
+}
+.fs-profile {
+  font-size: 0.9rem;
+}
+.w-footer-link {
+  width: 100px;
+}
+
+.margin-footer {
+  margin-top: 10%;
+}
+.profile-h2-size {
+  font-size: 3rem;
+}
+.gap-btn {
+  gap: 6rem;
+}
+.between {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 575px) {
+  div {
+    max-width: 300px;
+    gap: 1rem;
+  }
+  .gap-btn {
+    gap: 1rem;
+  }
+  img {
+    min-width: 250px;
+  }
+
+  .card-group {
+    flex-direction: column;
+  }
+
+  .card-group .col {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  img {
+    max-width: 90%;
+    min-width: 10px;
+  }
+}
