@@ -108,12 +108,14 @@
               >
                 <img width="50px" src="assets/avatar.png" alt="avatar" />
               </button>
-
               <ul class="dropdown-menu">
+                <!-- HO COLLEGATO LA PAGINA PROFILE ALL'ELEMENTO ACCOUNT QUI SOTTO -->
                 <li>
                   <a class="dropdown-item" href="Profile.html">Account</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                <li>
+                  <a class="dropdown-item" href="Settings.html">Impostazioni</a>
+                </li>
                 <li><a class="dropdown-item" href="#">Esci</a></li>
               </ul>
             </div>
@@ -122,9 +124,9 @@
       </nav>
     </header>
     <body class=" ">
-      <div class="d-flex max-width flex-column flex-wrap">
-        <div class="w-50 mx-auto">
-          <h2 class="profile-h2-size">Account</h2>
+      <div class="d-flex max-width mt-5 flex-column flex-wrap">
+        <div class="w-75 mx-auto">
+          <h2 class="fs-1">Account</h2>
         </div>
         <div
           class="w-75 mx-auto border border-secondary border-end-0 border-start-0 p-3"
@@ -148,6 +150,17 @@
                 <p class="ms-5 text-info">change</p>
               </div>
             </div>
+            <div
+              class="d-flex border pt-3 border-secondary border-end-0 border-start-0 border-bottom-0 flex-column justify-content-end"
+            >
+              <p class="d-flex justify-content-end text-info">
+                Redeem gift card or promo code
+              </p>
+
+              <p class="text-info d-flex justify-content-end">
+                Where to buy gift cards
+              </p>
+            </div>
           </div>
         </div>
 
@@ -169,6 +182,16 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-secondary"></p>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body d-flex flex-column my-1">
+                <p class="ms-5 text-info"></p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!--parte 3 -->
@@ -182,22 +205,22 @@
             </div>
             <div class="col-md-9">
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">Change account email</p>
+                <p class="text-info">Parental controls</p>
               </div>
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">Change password</p>
+                <p class="text-info">Test participation</p>
               </div>
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">change</p>
+                <p class="text-info">Manage download devices</p>
               </div>
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">change</p>
+                <p class="text-info">Activate a device</p>
               </div>
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">change</p>
+                <p class="text-info">Recent device streaming activity</p>
               </div>
               <div class="card-body d-flex justify-content-between">
-                <p class="text-info">change</p>
+                <p class="text-info">Sign out of all devices</p>
               </div>
             </div>
           </div>
@@ -205,25 +228,28 @@
 
         <!-- parte 4 -->
 
-        <div
-          class="w-75 mx-auto border border-secondary border-end-0 border-start-0 p-3"
-        >
-          <div class="row">
+        <div class="w-75 mx-auto">
+          <div class="row my-4">
             <div class="col">
               <p class="text-secondary">MY PROFILE</p>
             </div>
-            <div class="col-md-9">
-              <div class="card-body d-flex justify-content-between my-1">
-                <p class="card-text me-5">student@strive.school</p>
-                <p class="ms-5 text-info">Manage profile</p>
+            <div class="grid w-75 d-flex justify-content-between">
+              <div class="g-col-3">
+                <p class="fw-bold">
+                  <img width="50px" src="assets/avatar.png" alt="avatar" />
+                  Strive student
+                </p>
+                <p class="text-info">Language</p>
+                <p class="text-info">Playback settings</p>
+                <p class="text-info">Subtitle appeareance</p>
               </div>
-              <div class="card-body d-flex justify-content-between my-1">
-                <p class="card-text me-5">Password:*******</p>
-                <p class="ms-5 text-info">Change password</p>
+              <div class="g-col-3 d-flex flex-column justify-content-center">
+                <p class="text-info">Viewing activity</p>
+                <p class="text-info">Ratings</p>
               </div>
-              <div class="card-body d-flex justify-content-between my-1">
-                <p class="card-text me-5">Phone: 321 044 1279</p>
-                <p class="ms-5 text-info">change</p>
+              <div class="g-col-3 d-flex flex-column align-items-start">
+                <p class="text-info">Manage profiles</p>
+                <p class="text-info">Add profile email</p>
               </div>
             </div>
           </div>
@@ -231,67 +257,91 @@
       </div>
 
       <!-- 
-              <div
-                class="card-body d-flex justify-content-between mt-1 border border-secondary border-end-0 border-bottom-0 border-start-0"
-              >
-                <p class="card-text mt-2 me-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-paypal"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"
-                    />
+    <div
+    class="card-body d-flex justify-content-between mt-1 border border-secondary border-end-0 border-bottom-0 border-start-0"
+    >
+    <p class="card-text mt-2 me-5">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-paypal"
+        viewBox="0 0 16 16"
+        >
+        <path
+        d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"
+        />
                   </svg>
                   Paypal
                   <span class="mx-3">student@strive.school</span>
                 </p>
                 <div>
-                  <p class="ms-5 my-2 text-info">change</p>
-                  <p class="ms-5 text-info">change</p>
+                    <p class="ms-5 my-2 text-info">change</p>
+                    <p class="ms-5 text-info">change</p>
                 </div>
-              </div>
-
-              
             </div>
-            <div
-              class="card-body d-flex justify-content-between border border-secondary border-end-0 border-start-0"
-            >
-              <p class="card-text mt-2 w-auto text-secondary">PLAN DETAILS</p>
-              <p class="card-text font-monospace mt-2 fs-badge p-1 w-50">
-                Premium
-                <span class="font-monospace border border-2 border-black px-1"
-                  >ULTRA <span class="fw-bold">HD</span></span
-                >
-              </p>
-              <p class="card-text text-light">
-                Show titles of all maturity ratings for this profile.
-              </p>
-              <p class="ms-5 mt-2 text-info">change plan</p>
-            </div>
-
             
-
-            <div
-              class="card-body d-flex border border-secondary border-top-0 border-end-0 border-start-0"
-            >
-              <p class="card-text w-auto mt-2 text-secondary">SETTINGS</p>
-              <div class="">
-                <p class="ms-5 text-info">Parental controls</p>
-                <p class="ms-5 text-info">Test participations</p>
-                <p class="ms-5 text-info">Manage download devices</p>
-                <p class="ms-5 text-info">Activate a device</p>
-                <p class="ms-5 text-info">Recent device streaming activity</p>
-                <p class="ms-5 text-info">Sign out of all devices</p>
-              </div>
-            </div>
-          </div>
+            
         </div>
- -->
+        <div
+        class="card-body d-flex justify-content-between border border-secondary border-end-0 border-start-0"
+        >
+        <p class="card-text mt-2 w-auto text-secondary">PLAN DETAILS</p>
+        <p class="card-text font-monospace mt-2 fs-badge p-1 w-50">
+            Premium
+            <span class="font-monospace border border-2 border-black px-1"
+            >ULTRA <span class="fw-bold">HD</span></span
+            >
+        </p>
+        <p class="card-text text-light">
+            Show titles of all maturity ratings for this profile.
+        </p>
+        <p class="ms-5 mt-2 text-info">change plan</p>
+    </div>
+    
+    
+    
+    <div
+    class="card-body d-flex border border-secondary border-top-0 border-end-0 border-start-0"
+    >
+    <p class="card-text w-auto mt-2 text-secondary">SETTINGS</p>
+    <div class="">
+        <p class="ms-5 text-info">Parental controls</p>
+        <p class="ms-5 text-info">Test participations</p>
+        <p class="ms-5 text-info">Manage download devices</p>
+        <p class="ms-5 text-info">Activate a device</p>
+        <p class="ms-5 text-info">Recent device streaming activity</p>
+        <p class="ms-5 text-info">Sign out of all devices</p>
+    </div>
+</div>
+</div>
+</div>
+-->
     </body>
   </body>
 </html>
+
+<div class="col-md-9">
+  <div class="card-body d-flex justify-content-between my-1">
+    <p class="card-text me-5">
+      <img class="w-25" src="assets/avatar.png" alt="avatar" />
+      Strive Student
+    </p>
+    <div class="d-flex flex-column w-50">
+      <p class="ms-5 text-info">Manage profile</p>
+      <p class="ms-5 text-info">Add profile email</p>
+    </div>
+  </div>
+  <div class="card-body d-flex justify-content-around my-1">
+    <p class="card-text me-5">Language</p>
+    <p class="ms-5 text-info">Viewing activity</p>
+  </div>
+  <div class="card-body d-flex justify-content-around my-1">
+    <p class="card-text me-5">Playback settings</p>
+    <p class="ms-5 text-info">Ratings</p>
+  </div>
+  <div class="card-body d-flex justify-content-between my-1">
+    <p class="card-text me-5">Subtitle appearence</p>
+  </div>
+</div>
